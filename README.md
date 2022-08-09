@@ -98,7 +98,7 @@ The following components are included in this guide:
 	4- the flutter_app 
 	5- the db_server 
 Please make sure to install the required dependencies for every component before running the code. 
-The following dependencies are needed, if the code doesn’t compile, please check for missing dependencies and check the version of Python/ Dart / Flutter that you have. 
+The following dependencies are needed, if the code doesn’t compile, please check for missing dependencies and check the version of Python/ Dart / Flutter that you have.\ 
 For 1 please check: https://alphacephei.com/vosk/ \
 For 2 please check: https://github.com/coqui-ai/TTS \
 For 3 please check: https://rasa.com/docs/rasa/docker/building-in-docker/  \
