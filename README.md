@@ -35,7 +35,10 @@ backend of the system consists of multiple services hosted on the cloud, represe
 simplified microservices architecture.
 Because the backend exposes two WebSocket API endpoints, any client can utilize this
 backend, not only the client app discussed here.
-An architecture diagram of the system is depicted below.
+An architecture diagram of the system is depicted below:
+
+![System Architecture](Copy of arch.png)
+
 
 
 ## Functionality
@@ -79,7 +82,7 @@ The TTS server is a python webserver built with Sanic, which is a HTTP server th
 
 Because some of the voicebot responses are the same for all the interviews (like asking how you are), these responses have been generated beforehand and are saved as static files to the TTS server with a special naming convention. To save resources and not to generate them every time. Upon receiving the voicebot response, the TTS service checks whether the response should be generated in real time, and then send it via WebSocket to the client app. 
 
-The client app "play" the voicebot voice, and the cycle continue until the end of conversation is reached. The voicebot will then say goodbye and a new conversation can be started again. 
+The client app "plays" the voicebot voice, and the cycle continue until the end of conversation is reached. The voicebot will then say goodbye and a new conversation can be started again. 
 
 ## Installation
 
