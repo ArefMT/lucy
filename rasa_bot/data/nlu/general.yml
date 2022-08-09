@@ -1,0 +1,1071 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - Bonjour
+    - good Morning
+    - good morning
+    - good mourning
+    - good mourning Lucy
+    - good day Lucy
+    - good afternoon Lucy
+    - guten morgen
+    - hi lucy
+    - hey lucy
+    - hey lucy
+    - hallo
+    - hei
+    - hellllooooooo
+    - hello bot
+    - hello Lucy
+    - hello lucy
+    - hello!
+    - hey
+    - hey Lucy
+    - hey bot
+    - heya
+    - heylo
+    - Hi bot
+    - hi man
+    - hi there
+    - hi bot
+    - hi voicebot
+    - hi voice bot
+    - hola
+    - i said, helllllloooooo!!!!
+    - well hello there
+    - what is up?
+    - whats up
+    - whats up my bot
+    - whats up?
+    - ayyyy whaddup
+    - bonjour
+    - ey boss
+    - good evening
+    - good moring
+    - good morning
+    - greet
+    - greetings
+    - hai
+    - hallo
+    - halloo
+    - halloooo
+    - halo
+    - halo lucy
+    - heeey
+    - heelio
+    - hell9o
+    - hellio
+    - hello
+    - hello lucy
+    - hello everybody
+    - hello friend
+    - hello hi
+    - hello is anybody there
+    - hello it is me again
+    - hello robot
+    - hello lucy
+    - hello sweatheart
+    - hello there
+    - hello world
+    - hello?
+    - hello]
+    - hellooo
+    - helloooo
+    - helo
+    - hey
+    - hey bot
+    - hey bot!
+    - hey dude
+    - hey hey
+    - hey let's talk
+    - hey lucy
+    - hey ther
+    - hey there
+    - hey there boy
+    - hey there..
+    - hey, let's talk
+    - hey, lucy!
+    - heya
+    - heyho
+    - heyo
+    - hi !
+    - hi Mister
+    - hi again
+    - hi can you speak ?
+    - hi folks
+    - hi friend
+    - hi friends
+    - hi hi
+    - hi mrs lucy
+    - hi miss lucy
+    - hi pal!
+    - hi lucy
+    - hi there
+    - hi there it's me
+    - hi?
+    - hola
+    - howdy
+    - lucy hello
+    - salut
+    - sup
+    - wasssup
+    - wasssup!
+    - what up
+    - whats popping
+    - whats up
+    - yo
+    - yoo
+    - ssup?
+    - hey how is it going
+
+
+
+- intent: thank
+  examples: |
+    - thanks
+    - thanks lucy
+    - thank you lucy
+    - thanks alot!
+    - thank you very much
+    - cool thanks
+    - great thanks
+    - thank you
+    - thank you Lucy
+    - thank you so much
+    - thank's!
+    - thanks
+    - thanks bot
+    - thanks for that
+    - thanks!
+    - amazing, thanks
+    - cheers
+    - cheers bro
+    - cool thank you
+    - cool thanks
+    - cool, thanks
+    - thank you for asking
+    - you too
+    - thanks you too
+    - danke
+    - great thanks
+    - ok thanks
+    - thanks for asking
+    - ok thanks lucy
+    - ok thanks!
+    - perfect thank you
+    - thank you
+    - thank you anyways
+    - thanks
+    - thanks a bunch for everything
+    - thanks a lot
+    - thanks for the help
+    - thanks this is great news
+    - thanks you
+    - yes thanks
+    - thanks for your information
+    - thanks
+    - thank you very much for this interview
+
+
+- intent: goodbye
+  examples: |
+    - see you
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - see you around
+    - bye bye
+    - see you later
+    - Bye
+    - Bye bye
+    - adios
+    - adios
+    - bye
+    - bye bot
+    - bye bye
+    - bye bye bot
+    - bye for now
+    - bye udo
+    - bye was nice talking to you
+    - bye!
+    - byee
+    - catch you later
+    - ciao
+    - cya
+    - farewell
+    - good bye
+    - good bye lucy bot!
+    - good night
+    - goodbye
+    - goodbye
+    - goodnight
+    - gotta go
+    - ok Bye
+    - ok bye
+    - ok, bye
+    - ok.bye
+    - see u later
+    - see ya
+    - see you
+    - see you . bye
+    - take care
+    - then bye
+    - talk to you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - yes indeed
+    - indeed
+    - of course
+    - okay
+    - ok
+    - that sounds good
+    - alright
+    - correct
+    - yes please
+    - yeah
+    - Accept
+    - Awesome!
+    - good
+    - great
+    - i accept
+    - i accept.
+    - i agree
+    - i am using it
+    - i changed my mind. i want to accept it
+    - i do
+    - i get it
+    - i guess so
+    - i have used it in the past
+    - i will
+    - i'd absolutely love that
+    - i'm sure i will
+    - i'm using it
+    - nice
+    - ok
+    - ofcourse
+    - oh yes
+    - oh, ok
+    - ok
+    - ok let's start
+    - ok.
+    - okay
+    - okay!
+    - please
+    - sure
+    - Sure
+    - Sweet
+    - that would be great
+    - yes
+    - yup
+    - yea
+    - yeah
+    - yeah sure
+    - yep
+    - yep that's fine
+    - yep!
+    - yepp
+    - yes
+    - yes i do
+    - yes please
+    - yes please!
+    - yes, i accept
+    - yes.
+    - yup
+    - a little
+    - absolutely
+    - accept
+    - accepted
+    - agreed
+    - ah ok
+    - alright
+    - alright, cool
+    - amayzing
+    - amazing!
+    - awesome
+    - awesome!
+    - confirm
+    - cool story bro
+    - definitely yes without a doubt
+    - done
+    - fair enough
+    - fcourse
+    - fine
+    - fuck yeah!
+    - go
+    - go ahead
+    - go for it
+    - going super well
+    - good.
+    - great
+    - great lets do that
+    - great!
+    - hell yeah
+    - hell yes
+    - hm, i'd like that
+    - how nice!
+    - i accept
+    - i agree
+    - i am!
+    - i want that
+    - i will!
+    - it is ok
+    - its okay
+    - k
+    - kk
+    - kay
+    - lets do it
+    - lets do this
+    - not bad
+    - of course
+    - ofcoure i do
+    - ofcourse
+    - oh awesome!
+    - oh cool
+    - oh good !!
+    - oh super
+    - ok
+    - ok cool
+    - ok fine
+    - ok friend
+    - ok good
+    - ok great
+    - ok i accept
+    - ok Lucy
+    - ok, i behave now
+    - ok, i understood
+    - ok...
+    - okay
+    - okay cool
+    - okay sure
+    - okay..
+    - oki doki
+    - okie
+    - ook
+    - oui
+    - perfect
+    - please
+    - si
+    - sort of
+    - sure
+    - sure thing
+    - sure!
+    - that is cool
+    - that ok
+    - that sounds fine
+    - that's great
+    - thats fine
+    - thats good
+    - thats great
+    - top
+    - uh-huh
+    - very much
+    - well yes
+    - y
+    - ya
+    - ya cool
+    - ya go for it
+    - ya i want
+    - ya please
+    - ya thats cool
+    - yaah
+    - yap
+    - yaps
+    - yas
+    - yay
+    - ye
+    - ye splease
+    - yea
+    - yeah
+    - yeah do that
+    - yeah sure
+    - yeah'=
+    - yeah, why not
+    - yeeeeezzzzz
+    - yeeees
+    - yep
+    - yep i want that
+    - yep if i have to
+    - yep please
+    - yep that's nice
+    - yep thats cool
+    - yep, will do thank you
+    - yep. :/
+    - yes
+    - yes ...
+    - yes i do
+    - yes accept please
+    - yes baby
+    - yes cool
+    - yes give me information
+    - yes go ahead
+    - yes go for it
+    - yes great
+    - yes i accept
+    - yes i agree
+    - yes i have built a bot before
+    - yes i have!
+    - yes it is
+    - yes it was okay
+    - yes of course
+    - yes pleae
+    - yes please
+    - yes please!
+    - yes pls
+    - yes sirfr
+    - yes that's great
+    - yes that's what i want
+    - yes you can
+    - yes'
+    - yes, i'd love to
+    - yes, cool
+    - yes, give me information, please
+    - yes,i am
+    - yes.
+    - yesh
+    - yess
+    - yessoo
+    - yesss
+    - yesssss
+    - yesyestyes
+    - yesyesyes
+    - yez
+    - yop
+    - you asked me a yes or no question, which i answered with yes
+    - you got me, i accept, if you want me to
+    - yres
+    - ys
+    - yup
+    - yyeeeh
+    - okay cool
+    - ok..
+    - considering
+    - More a less
+    - sounds good!
+    - really
+    - yes carry on
+    - you can continue
+    - yes please continue
+    - yes continue
+    - yes please lucy continue
+    - yeah continue
+    - yes i am ready
+    - i am ready
+    - yes i use it in my job
+    - yes a similar software
+    - am ready
+    - ready to go
+    - ready set go
+    - yes i am ready
+    - yes i am ready
+    - yes indeed i am ready
+    - Lets start
+    - Let us start
+    - yes let us start
+    - ok lets go
+    - Lets go
+
+
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - i don't think so
+    - don't like that
+    - no way
+    - not really
+    - i don't want to
+    - i don't want to give it to you
+    - i don't want to say
+    - i dont want to tell
+    - i'm not going to give it to you
+    - nEin
+    - no
+    - no Don"T WAnT THiS!
+    - nah
+    - neither
+    - never
+    - nevermind
+    - no
+    - no thank you
+    - no, not really.
+    - no, thank you
+    - no.
+    - nopes
+    - not really
+    - absolutely not
+    - decline
+    - definitely not
+    - deny
+    - i decline
+    - i don not like this
+    - i don't think so
+    - i don't want either of those
+    - i don't want to
+    - i dont want to
+    - i dont want to accept :P lol
+    - i guess it means - no
+    - i'm afraid not
+    - it is going pretty badly
+    - i dont have an opinion on that
+    - n
+    - na
+    - nah
+    - nah i'm good
+    - nah not for me
+    - nah, first time
+    - nah, i'm good
+    - nehi
+    - nein
+    - neither
+    - never
+    - never mind
+    - no
+    - no i dont want
+    - no i haven't decided yet if i want to sign up
+    - no and no again
+    - no bots at all
+    - no go
+    - no i can't
+    - no i don't accept
+    - no i dont want to
+    - no i dont want to accept :P lol
+    - no i won't
+    - no ma'am
+    - no sir
+    - no sorry
+    - no thank s
+    - no thank you
+    - no thanks
+    - no way
+    - no you did it wrong
+    - no!!!!
+    - no, i hate it
+    - no, my frst time
+    - no, thank you
+    - no, thanks
+    - no, thankyou
+    - no. u r idiot
+    - non
+    - noooooooooo
+    - noooooooooooooooooooooooooooooooooooooooo
+    - nop
+    - nope
+    - nope!
+    - nope. i am good
+    - not going well at all
+    - not really
+    - not right now
+    - not yet
+    - sorry not right now
+    - still dont want to tell
+    - i don't want to tell you
+    - i dont want to tell you
+    - i do not want to tell you
+    - i can not tell you
+    - i won't tell you
+    - i will not tell
+    - i wont tell you
+    - thanks but no thanks
+    - this sucks
+    - very bad
+    - i don't wanna tell the name of my company
+    - no stop
+    - stop it, i do not care!!!
+    - none of them
+    - i don't agree
+    - i didn't have the chance to use it yet
+    - not yet
+    - no answer
+    - i will use it soon
+    - i do not know
+    - i am no the right person to ask
+    - i am not authorized to tell you
+    - i dont know
+    - i dont know how  to say it
+    - do not continue
+    - i dont know exactly what my job title is
+    - i dont know how to descirbe what i do
+    - stop here
+    - i dont want you to continue
+    - i dont want to hear you anymore
+    - no dont start
+    - no start
+    - please do no start
+    - please stop asking me questions
+    - dont continue
+    - dont go forward
+    - stop
+    - no idea
+    - no actually it is not
+    - definitely not my first time it think its my third of fourth
+    - i have no idea
+    - i am not allowed to tell you
+    - it is a secret
+    - dont ask such things
+    - you are not supposed to ask this
+    - you have to ask someone else
+    - i dont have an answer to that
+    - i think i dont want to answer this question
+    - i think i cant answer this question
+    - i am unsure
+    - no one told me about the answer
+    - i think i dont want to answer this question
+    - i dont want to discuss this with you
+    - let us leave it blank
+    - could we move on
+    - i have no information about that
+    - i cant tell you
+    - i would love to help but i really have no idea
+    - i am missing this information
+    - i'm not sure
+    - i don't know how to answer this
+    - not sure
+    - non of your business
+    - no one told me about the budget
+    - i have no information about the budget
+    - i can not answer the budget question
+    - no budget
+    - not with a chatbot
+    - not with a voicebot
+    - not with a robot
+    - not the first time
+    - not my first time
+    - no this is not my first interview
+    - this is not the first time i am doing this
+    - no this is not the first time
+    - not first time
+
+- intent: react_positive
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - i am doing well
+    - i am feeling very good
+    - great im pleased to meet you
+    - doing good
+    - i am great
+    - i am amazing
+    - i am alrigh
+    - am good
+    - im good and you lucy
+    - im fine and you lucy
+    - good and yourself
+    - not bad and how are you
+    - goood and how are you
+    - i am fine
+    - i am quite good and you
+    - good and you lucy
+    - i am doing just fine and you
+    - i am doing fine
+    - i am doing well and you
+    - i am well
+    - i am happy to be here
+    - i feel happy to be here
+    - never been better
+    - i feel great
+    - happy to talk to you
+    - happy you asked
+    - just amazing
+    - a wonderful day
+    - i am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so damn good and you
+    - so perfect
+    - i am doing fine
+    - all good
+    - doing well
+    - i am doing fine and you
+    - good and you
+    - great and you
+    - as usual
+    - doing just great
+    - wow amazing
+    - wow
+
+- intent: react_negative
+  examples: |
+    - my day was horrible
+    - i don't feel very well
+    - i am disappointed
+    - i ve been studying a little too hard  i need a break
+    - super sad
+    - i'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - so so
+    - not great
+    - not well
+    - i fell sick
+    - i'm tired
+    - not good
+    - i am a little bit scared to talk to you
+    - you make me a little bit nervous
+    - i am a little bit nervous
+    - stressed out
+    - a bit stressed out
+    - i am a bit stressed out
+    - worried
+    - feeling sick
+    - ive been better
+    - i have been better
+    - i ve seen better days
+    - not very good
+    - extremly sad
+    - im sad
+    - ive felt better
+    - so saad
+    - so sad
+    - i am feeling bad
+    - i am sad
+    - i am super sad
+    - i'm sad
+    - i'm super sad
+    - now i'm sad
+    - This is bad
+    - you are quite bad
+    - bad
+    - bad boy
+    - crappy joke
+    - i am angry over you
+    - i am feel sad
+    - i am sad
+    - i am sad about that
+    - i am very sad
+    - i feel sad
+    - i sad
+    - i'm sad
+    - lucy is bad
+    - so sad
+    - super sad
+    - you broke my heart
+    - very very sad
+    - you are bad
+    - you are bad bot
+    - you make me sad
+    - you are mad
+    - you are rude
+    - bots are bad
+    - i don't care!!!!
+    - i dont like bots
+    - this is a really frustrating experience
+    - you're rather dull
+    - i am so worry
+    - i will leave
+    - although i understand your still in development, i feel a little bit disappointed
+    - Surely you're not so smart like i thought
+    - im not feeling good
+    - not good
+    - Thats so rude
+    - sadly
+    - That tool here isnt good
+    - boring
+
+
+- intent: repeat
+  examples: |
+    - Can you please repeat the question
+    - repeat
+    - lucy repeat
+    - lucy repeat question
+    - reapeat the question
+    - repaet the last part
+    - can you repeat the question
+    - ask again
+    - ask me again
+    - what was the question
+    - what was the question again
+    - could you repeat what you said
+    - repeat what you said
+    - repeat last question
+    - very hard to follow please repeat the last question
+    - jesus that was very fast please repeat it again
+    - excuse me, could you maybe repeat the question
+    - repeat please
+    - lucy can you please repeat i dont think i got that
+    - can you repeat the last question
+    - could you please repeat that?
+    - i think you might want to repaet this
+    - repeat this for me
+    - can you say it again please
+    - again please
+    - please one more time
+    - one more time please
+    - i am lost can you please repeat
+    - you lost me there can you please repeat
+    - can you ask me one more time
+    - one more time please i think i missed that
+    - i zoomed out a little can you please repeat
+    - maybe we can repeat the last question
+    - what was the last question
+    - i would like to hear the last question one more time
+    - it would be awesome if you can repeat it again
+    - i think i missed the question can you repeat
+    - that was a long question i didnt get it can you maybe repeat it
+
+
+
+- intent: explain
+  examples: |
+    - can you elaborate
+    - could you explain why you need that
+    - could you tell me more
+    - explain it to me
+    - f that
+    - i really have no idea what you are saying
+    - i want more information
+    - i would like to know why you need that
+    - please elaborate
+    - please explain
+    - why do you need to know that
+    - why is that necessary
+    - give me more details
+    - why
+    - why do you need this info
+    - can you please explain more
+    - can you please be more specific
+    - please be more specific
+    - lucy explain the question
+    - please explain the question
+    - why do you want to know that
+    - what do you mean
+    - what does that mean
+    - how come?
+    - can you explain why is this important
+    - can you rephrase
+    - maybe you can rephrase the question
+    - maybe ask me a similir question
+    - can you ask me something smilir maybe
+    - can you elaborate on the question
+    - i need more information
+    - lucy i dont think i understood the question can you explain more
+    - i dont understand the question
+    - no comprendo
+    - lucy can please give me more details
+    - can you tell me a bit more so i can answer this question
+    - a little explination would be good
+    - i dont think i understand what you said
+    - maybe i am dumb but i dont get the question
+    - i dont get the question
+    - yo i dont get it
+
+
+- intent: need_help
+  examples: |
+    - i couldn't understand this
+    - can you please repeate
+    - can you please help me
+    - need help on chatbot
+    - i have a question
+    - i have a question about the functioning of the device
+    - i have a question for you
+    - i have a question.
+    - hello i have a question
+    - i have a question?
+    - Sure. i have a question for you
+    - lucy i have a question
+    - a question
+    - can i ask something
+    - yes, i have a question
+    - yes, i have a question
+    - i am stuck and i need help
+    - i have a few questions
+    - i have a few questions on my pay check
+    - there is an issue during installation
+    - i am stuck
+    - i am stuck with error
+    - i got stuck with the installation
+    - i m stuck while importing data
+    - i am stuck with action
+    - i am stuck with fallback
+    - i  am stuck with an erorr
+    - im stuck
+    - i have errors in installaition
+    - i am facing a particular error,could u help me?
+    - it is showing error while installing
+    - i am seeing an error
+    - i get errors while installation
+    - error message when installing rasa
+    - Rasa installation error
+    - getting some errors
+    - rasa init error
+    - no i get a error while installing
+    - i have an error on install
+    - i got some error during installation
+    - lots of errors
+    - i got error while installing rasa
+    - i have error during the installation
+    - i get error when initializing a project
+    - i'm getting an error while installing Rasa
+
+
+- intent: restart
+  examples: |
+    - yep you can restart
+    - Please restart this chat
+    - restart conversation
+    - ok restart please
+    - reset everything
+    - reset
+    - lets start all over again
+    - start all over
+    - please restart the bot
+    - restart this conversation
+    - i want to restart
+    - why don't you restart
+    - hey, i said restart
+    - restart session please
+    - restart please
+
+
+- intent: human_handoff
+  examples: |
+    - Can i speak to anyone who can really help me?
+    - i don't wanna talk to a bot
+    - i dont like to talk to a machine
+    - i want to talk to a human
+    - i want to talk to the founders
+    - are there also humans working for your company?
+    - can i speak to a person?
+    - can i please speak to a human?
+    - can you forward me to your team
+    - can you please connect me to a real employee?
+    - can you put me in touch with a human?
+    - do you have human support ?
+    - gimme a proper human
+    - give me a human
+    - give me a human now
+    - human handoff
+    - i dont wanna talk to a bot
+    - i want to speak to a real person
+    - i want to speak to customer service
+    - i want to talk to a human
+    - i want to talk to a person
+    - i want to talk to human
+    - i want to talk to someone at your company
+    - i want to talk to someone else
+    - i want to talk to someone who is smarter than you
+    - i would like to speak to a person
+    - i'd rather speak with a real employee
+    - id like to talk to a real employee
+    - let me speak with a real person please
+    - let me talk to a human
+    - let me talk to a real person
+    - please give me a human
+    - service agent
+    - someone from customer care
+    - speak to a real person
+    - talking to a bot is stupid
+    - that's annoying i'd like to speak to someone real
+    - thats not helping, can i talk to human?
+    - wrong i want to speak to a human
+    - can i speak to human
+    - can i speak to your human
+    - i want to chat with human
+    - How do i talk to a human
+    - talk with a human
+    - Can i talk to a human instead
+    - nevermind.... you're not human ... i need to talk to a live person
+    - Can you get a human to assist me?
+    - Can i talk to a human?
+    - Can i talk to a human
+    - Can i speak to a human?
+    - can i speak to a human
+    - no, i want to talk to human
+    - can you hand a conversation over to a human?
+    - can i talk to human?
+    - can i talk to human
+    - talk to human
+    - i want human :(
+    - can i talk to human
+    - i want to talk to a human \
+    - i want to speak to human
+    - can i talk to a real person?
+    - connect me to a real person
+    - i need a real person
+    - can i took with a real person
+    - let me speak to a real person
+    - let me speak to a real person please
+    - i want to talk to a real person
+
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot
+    - are you a human
+    - am i talking to a bot
+    - am i talking to a human
+    - what can you do
+    - are you smart
+    - are you real
+    - what can you do
+    - what can you do for me
+    - tell me about the universe
+
+- intent: end_conversation
+  examples: |
+    - quit
+    - exit
+    - end conversation
+    - stop the conversation
+    - end the conversation
+    - end
+    - quit the conversation
+    - stop the app
+    - close the programm
+    - kill the app
+    - lucy stop
+    - lucy quit
+    - quite lucy
+    - lucy end
+
+
+- intent: explain_user_stories
+  examples: |
+    - what are user stories again
+    - what were userstories again
+    - can you please explain user storys to me
+    - explain user stories
+    - what is auser story
+    - give me an example of user story
+    - example user story
+    - how do you formulate a user story
+    - i dont know user stories
+    - i dont understand user stories
+    - maybe you can help me with the user stories
+    - user stories are tricky
+    - i cant remember how to formulate a user story
+    - are user stories just stories
+    - remind me again how we can formulate user stories
+    - a user story was on the tip of my tounge but i forgot how to say it
+    - can you please give me some guidance on how to formulate a user stories
+    - what can you tell me about user stories
+    - tell me a user story
+    - can you think about a user story

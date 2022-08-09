@@ -1,0 +1,66 @@
+version: "3.1"
+
+rules:
+
+- rule: Welcome users when the user starts a conversation with intent `greet`
+  conversation_start: true
+  steps:
+  - intent: greet
+  - action: utter_welcome
+
+- rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+  steps:
+  - intent: nlu_fallback
+  - action: utter_please_rephrase
+
+
+- rule: Repeat the last question
+  steps:
+  - intent: repeat
+  - action: action_repeat_last_utterance
+
+
+- rule: User asks for explination bot tells them about its limitation
+  steps:
+  - intent: explain
+  - action: utter_limitation
+
+
+- rule: User asks for help bots tell them about the limitations
+  steps:
+  - intent: need_help
+  - action: utter_cant_help
+
+
+- rule: User wants to speack to a human
+  steps:
+  - intent: human_handoff
+  - action: utter_speak_to_human
+
+- rule: User wants to restart session
+  steps:
+  - intent: restart
+  - action: action_restart
+
+- rule: User wants end conversation immediately
+  steps:
+  - intent: end_conversation
+  - action: utter_bye
+  - action: action_restart
+
+- rule: User wants end conversation
+  steps:
+  - intent: goodbye
+  - action: utter_bye
+  - action: action_restart
+
+
+- rule: User challanges Lucy's capabilities
+  steps:
+  - intent: bot_challenge
+  - action: utter_capabilities
+
+- rule: Explain user stories to the user
+  steps:
+  - intent: explain_user_stories
+  - action: utter_explain_user_stories

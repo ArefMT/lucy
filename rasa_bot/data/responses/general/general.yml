@@ -1,0 +1,30 @@
+version: "3.1"
+
+responses:
+  utter_please_rephrase:
+  - text: utter_please_rephrase
+#  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+
+  utter_default:
+  - text: utter_default
+#  - text: Sorry I didn't get that. Can you rephrase?
+
+  utter_limitation:
+  - text: utter_limitation
+#  - text: I would love to elaborate on that a bit more, but there is some limitations on what I can do.
+
+  utter_cant_help:
+  - text: utter_cant_help
+  #  - text: Sorry, but as much as I would love to help you with that, there is some limitations on what I can do.
+
+  utter_speak_to_human:
+  - text: utter_speak_to_human
+  #  - text: I am going to call a fellow human for you.
+
+  utter_capabilities:
+  - text: utter_capabilities
+  #  - text: I am a voice bot trained as a requirement engineer, I am trained to carry out a quick conversations about feature elecitation.
+
+  utter_bye:
+  - text: utter_speak_to_human
+  #  - text: Goodbye!

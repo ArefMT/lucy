@@ -1,0 +1,101 @@
+1- Question:
+I would like to know if this is your first time doing an interview with a requirement engineer.
+
+1- Answers: *Negation* Answers like: “No, it is not the first time are obvious.”
+- I had a couple interviews of this kind before
+- I have worked with requirement engineers before     
+- I had some interviews of this kind     
+- In my job I have to work with requirement engineers all the time     
+- I have done this before
+
+1-Answers: *Affirmation*
+-  Yes, this is the first time.
+
+2-Question:
+Could you please name your job title or your role in the project?
+
+2-Answers: *Just name role*
+- I am a [software developer](role)     
+- I work as a [studio technician](role) 
+- I am working as a [assurance officer](role) 
+- [architectural designer](role)
+
+3-Question:
+And how long have you been working as a *Role*?
+
+3-Answers:  *Give period*
+- I have been working as [legal recruiter](role) for three years now     
+- Four months 
+- Two years now     
+- I started working here last week     
+- Last week     
+- I started in August     
+- I've been working as a [media consultant](role) for one year
+
+4-Question:
+How much time do we have to work on this project?
+
+4-Answers: *Give time*
+
+- We have until next Monday     
+- We have exactly 4 weeks to come up with a solution     
+- We have to do it in two months     
+- I think we have 6 months give or take     
+- I think we are running out of time, so maybe a couple of weeks     
+- A couple of days     
+- We have until Friday 
+- We will work on this feature until we find a solution     
+
+4-Answers: *No specific time*
+- Time is not a thing to be concerned about
+- There is not time left     
+- Not a lot of time     
+- Very little time     
+- Time is always hard to estimate     
+- There is no deadline 
+- We did not discuss the deadline
+
+4-Answers: *Do not know*
+-Ask my boss
+- No Idea
+
+5-Question:
+Do you happen to know how much has been budgeted for this project?
+
+5-Answers: *give budget*
+- 4000 dollars     
+- 600000 euros     
+- One million
+- I think we have 30k     
+- One million US dollars     
+- Maybe 2 or 3 millions     
+
+
+5-Answers: *do not give budget*
+- We have a lot of money to spend     
+- We have a lot at our disposal
+- Not a lot of money     
+- I will have to check that with my boss     
+
+6-Question:
+Who would use this app?
+
+6-Answers: *Name users*
+- People from my department will use it 
+- People from my department 
+- I think my colleagues will use it     
+- Every [estate agent](role) I know will use it 
+- [automobile salesmans](user_roles)     
+- [business architects](user_roles) and [business bankers](user_roles)     
+- Every person will use this software     
+- My team will use it for sure     
+- I will use it and every one in my department     
+- I will use it     
+- Me     
+- My son will love this feature     - Everyone I know     
+- I think our industry partners will give it a shot
+
+6-Answers: *Name no users*
+
+-No one ever!
+-I don’t know, no on maybe, it is just a prototype

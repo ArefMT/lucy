@@ -1,0 +1,742 @@
+version: "3.1"
+
+stories:
+
+######################
+# Happy paths:
+######################
+
+- story: Interview goes as planned - user reacted positively - affirmed - affirmed
+  steps:
+  - intent: greet
+  - action: utter_welcome
+  - intent: react_positive
+  - action: utter_point_out_capability
+  - intent: affirm
+  - action: utter_interview_details
+  - intent: affirm
+  - action: utter_ask_to_name_role
+  - intent: answer_name_role
+  - action: action_ask_years_of_experience
+  - intent: answer_give_years_of_experience
+  - action: utter_ask_to_give_first_userstory
+  - intent: answer_userstory
+  - action: utter_ask_about_feature_importance
+  - intent: give_feature_importance
+  - action: utter_ask_to_give_second_userstory
+  - intent: answer_userstory
+  - action: utter_ask_about_feature_importance
+  - intent: give_feature_importance
+  - action: utter_end_the_interview
+  - intent: thank
+  - action: utter_bye
+  - intent: goodbye
+  - action: utter_bye
+  - action: action_restart
+
+- story: Interview goes as planned - user thanks - affirmed - affirmed
+  steps:
+  - intent: greet
+  - action: utter_welcome
+  - intent: thank
+  - action: utter_point_out_capability
+  - intent: affirm
+  - action: utter_interview_details
+  - intent: affirm
+  - action: utter_ask_to_name_role
+  - intent: answer_name_role
+  - action: action_ask_years_of_experience
+  - intent: answer_give_years_of_experience
+  - action: utter_ask_to_give_first_userstory
+  - intent: answer_userstory
+  - action: utter_ask_about_feature_importance
+  - intent: give_feature_importance
+  - action: utter_ask_to_give_second_userstory
+  - intent: answer_userstory
+  - action: utter_ask_about_feature_importance
+  - intent: give_feature_importance
+  - action: utter_end_the_interview
+  - intent: thank
+  - action: utter_bye
+  - intent: goodbye
+  - action: utter_bye
+  - action: action_restart
+
+- story: Interview goes as planned - user affirmed - affirmed - affirmed
+  steps:
+  - intent: greet
+  - action: utter_welcome
+  - intent: affirm
+  - action: utter_point_out_capability
+  - intent: affirm
+  - action: utter_interview_details
+  - intent: affirm
+  - action: utter_ask_to_name_role
+  - intent: answer_name_role
+  - action: action_ask_years_of_experience
+  - intent: answer_give_years_of_experience
+  - action: utter_ask_to_give_first_userstory
+  - intent: answer_userstory
+  - action: utter_ask_about_feature_importance
+  - intent: give_feature_importance
+  - action: utter_ask_to_give_second_userstory
+  - intent: answer_userstory
+  - action: utter_ask_about_feature_importance
+  - intent: give_feature_importance
+  - action: utter_end_the_interview
+  - intent: thank
+  - action: utter_bye
+  - intent: goodbye
+  - action: utter_bye
+  - action: action_restart
+
+
+- story: Interview goes as planned - user reacted positively - affirmed - reacted positive
+  steps:
+  - intent: greet
+  - action: utter_welcome
+  - intent: react_positive
+  - action: utter_point_out_capability
+  - intent: affirm
+  - action: utter_interview_details
+  - intent: react_positive
+  - action: utter_ask_to_name_role
+  - intent: answer_name_role
+  - action: action_ask_years_of_experience
+  - intent: answer_give_years_of_experience
+  - action: utter_ask_to_give_first_userstory
+  - intent: answer_userstory
+  - action: utter_ask_about_feature_importance
+  - intent: give_feature_importance
+  - action: utter_ask_to_give_second_userstory
+  - intent: answer_userstory
+  - action: utter_ask_about_feature_importance
+  - intent: give_feature_importance
+  - action: utter_end_the_interview
+  - intent: thank
+  - action: utter_bye
+  - intent: goodbye
+  - action: utter_bye
+  - action: action_restart
+
+
+- story: Interview goes as planned - user reacted positively - reacted positively - reacted positive
+  steps:
+  - intent: greet
+  - action: utter_welcome
+  - intent: react_positive
+  - action: utter_point_out_capability
+  - intent: react_positive
+  - action: utter_interview_details
+  - intent: react_positive
+  - action: utter_ask_to_name_role
+  - intent: answer_name_role
+  - action: action_ask_years_of_experience
+  - intent: answer_give_years_of_experience
+  - action: utter_ask_to_give_first_userstory
+  - intent: answer_userstory
+  - action: utter_ask_about_feature_importance
+  - intent: give_feature_importance
+  - action: utter_ask_to_give_second_userstory
+  - intent: answer_userstory
+  - action: utter_ask_about_feature_importance
+  - intent: give_feature_importance
+  - action: utter_end_the_interview
+  - intent: thank
+  - action: utter_bye
+  - intent: goodbye
+  - action: utter_bye
+  - action: action_restart
+
+
+- story: Interview goes as planned - user affirmed - reacted positively - affirmed
+  steps:
+  - intent: greet
+  - action: utter_welcome
+  - intent: affirm
+  - action: utter_point_out_capability
+  - intent: react_positive
+  - action: utter_interview_details
+  - intent: affirm
+  - action: utter_ask_to_name_role
+  - intent: answer_name_role
+  - action: action_ask_years_of_experience
+  - intent: answer_give_years_of_experience
+  - action: utter_ask_to_give_first_userstory
+  - intent: answer_userstory
+  - action: utter_ask_about_feature_importance
+  - intent: give_feature_importance
+  - action: utter_ask_to_give_second_userstory
+  - intent: answer_userstory
+  - action: utter_ask_about_feature_importance
+  - intent: give_feature_importance
+  - action: utter_end_the_interview
+  - intent: thank
+  - action: utter_bye
+  - intent: goodbye
+  - action: utter_bye
+  - action: action_restart
+
+- story: Interview goes as planned - thanked - reacted positively - affirmed
+  steps:
+  - intent: greet
+  - action: utter_welcome
+  - intent: thank
+  - action: utter_point_out_capability
+  - intent: react_positive
+  - action: utter_interview_details
+  - intent: affirm
+  - action: utter_ask_to_name_role
+  - intent: answer_name_role
+  - action: action_ask_years_of_experience
+  - intent: answer_give_years_of_experience
+  - action: utter_ask_to_give_first_userstory
+  - intent: answer_userstory
+  - action: utter_ask_about_feature_importance
+  - intent: give_feature_importance
+  - action: utter_ask_to_give_second_userstory
+  - intent: answer_userstory
+  - action: utter_ask_about_feature_importance
+  - intent: give_feature_importance
+  - action: utter_end_the_interview
+  - intent: thank
+  - action: utter_bye
+  - intent: goodbye
+  - action: utter_bye
+  - action: action_restart
+
+- story: Interview goes as planned - affirmed - affirmed- reacted positively
+  steps:
+  - intent: greet
+  - action: utter_welcome
+  - intent: affirm
+  - action: utter_point_out_capability
+  - intent: affirm
+  - action: utter_interview_details
+  - intent: react_positive
+  - action: utter_ask_to_name_role
+  - intent: answer_name_role
+  - action: action_ask_years_of_experience
+  - intent: answer_give_years_of_experience
+  - action: utter_ask_to_give_first_userstory
+  - intent: answer_userstory
+  - action: utter_ask_about_feature_importance
+  - intent: give_feature_importance
+  - action: utter_ask_to_give_second_userstory
+  - intent: answer_userstory
+  - action: utter_ask_about_feature_importance
+  - intent: give_feature_importance
+  - action: utter_end_the_interview
+  - intent: thank
+  - action: utter_bye
+  - intent: goodbye
+  - action: utter_bye
+  - action: action_restart
+
+
+- story: Interview goes as planned but user is not happy. User affirmed- affirmed
+  steps:
+  - intent: greet
+  - action: utter_welcome
+  - intent: react_negative
+  - action: utter_point_out_capability_unhappy
+  - intent: affirm
+  - action: utter_interview_details
+  - intent: affirm
+  - action: utter_ask_to_name_role
+  - intent: answer_name_role
+  - action: action_ask_years_of_experience
+  - intent: answer_give_years_of_experience
+  - action: utter_ask_to_give_first_userstory
+  - intent: answer_userstory
+  - action: utter_ask_about_feature_importance
+  - intent: give_feature_importance
+  - action: utter_ask_to_give_second_userstory
+  - intent: answer_userstory
+  - action: utter_ask_about_feature_importance
+  - intent: give_feature_importance
+  - action: utter_end_the_interview
+  - intent: thank
+  - action: utter_bye
+  - intent: goodbye
+  - action: utter_bye
+  - action: action_restart
+
+- story: Interview goes as planned but user is not happy. User affirmed- racted positivly
+  steps:
+  - intent: greet
+  - action: utter_welcome
+  - intent: react_negative
+  - action: utter_point_out_capability_unhappy
+  - intent: affirm
+  - action: utter_interview_details
+  - intent: react_positive
+  - action: utter_ask_to_name_role
+  - intent: answer_name_role
+  - action: action_ask_years_of_experience
+  - intent: answer_give_years_of_experience
+  - action: utter_ask_to_give_first_userstory
+  - intent: answer_userstory
+  - action: utter_ask_about_feature_importance
+  - intent: give_feature_importance
+  - action: utter_ask_to_give_second_userstory
+  - intent: answer_userstory
+  - action: utter_ask_about_feature_importance
+  - intent: give_feature_importance
+  - action: utter_end_the_interview
+  - intent: thank
+  - action: utter_bye
+  - intent: goodbye
+  - action: utter_bye
+  - action: action_restart
+
+- story: Interview goes as planned but user is not happy. User racted positivly- affirmed
+  steps:
+  - intent: greet
+  - action: utter_welcome
+  - intent: react_negative
+  - action: utter_point_out_capability_unhappy
+  - intent: react_positive
+  - action: utter_interview_details
+  - intent: affirm
+  - action: utter_ask_to_name_role
+  - intent: answer_name_role
+  - action: action_ask_years_of_experience
+  - intent: answer_give_years_of_experience
+  - action: utter_ask_to_give_first_userstory
+  - intent: answer_userstory
+  - action: utter_ask_about_feature_importance
+  - intent: give_feature_importance
+  - action: utter_ask_to_give_second_userstory
+  - intent: answer_userstory
+  - action: utter_ask_about_feature_importance
+  - intent: give_feature_importance
+  - action: utter_end_the_interview
+  - intent: thank
+  - action: utter_bye
+  - intent: goodbye
+  - action: utter_bye
+  - action: action_restart
+
+
+- story: Interview goes as planned but user is not happy. User racted positivly- acted positivly
+  steps:
+  - intent: greet
+  - action: utter_welcome
+  - intent: react_negative
+  - action: utter_point_out_capability_unhappy
+  - intent: react_positive
+  - action: utter_interview_details
+  - intent: react_positive
+  - action: utter_ask_to_name_role
+  - intent: answer_name_role
+  - action: action_ask_years_of_experience
+  - intent: answer_give_years_of_experience
+  - action: utter_ask_to_give_first_userstory
+  - intent: answer_userstory
+  - action: utter_ask_about_feature_importance
+  - intent: give_feature_importance
+  - action: utter_ask_to_give_second_userstory
+  - intent: answer_userstory
+  - action: utter_ask_about_feature_importance
+  - intent: give_feature_importance
+  - action: utter_end_the_interview
+  - intent: thank
+  - action: utter_bye
+  - intent: goodbye
+  - action: utter_bye
+  - action: action_restart
+
+
+- story: Interviewee cant name role but can give user stories without importance
+  steps:
+  - intent: greet
+  - action: utter_welcome
+  - intent: react_positive
+  - action: utter_point_out_capability
+  - intent: affirm
+  - action: utter_interview_details
+  - intent: affirm
+  - action: utter_ask_to_name_role
+  - intent: deny
+  - action: utter_ask_to_give_first_userstory
+  - intent: answer_userstory
+  - action: utter_ask_about_feature_importance
+  - or:
+    - intent: give_feature_importance
+    - intent: deny
+  - action: utter_ask_to_give_second_userstory
+  - intent: deny
+  - action: utter_end_the_interview
+  - intent: thank
+  - action: utter_bye
+  - intent: goodbye
+  - action: utter_bye
+  - action: action_restart
+
+- story: Interviewee cant name role but can give user stories with importance
+  steps:
+  - intent: greet
+  - action: utter_welcome
+  - intent: react_positive
+  - action: utter_point_out_capability
+  - intent: affirm
+  - action: utter_interview_details
+  - intent: affirm
+  - action: utter_ask_to_name_role
+  - intent: deny
+  - action: utter_ask_to_give_first_userstory
+  - intent: answer_userstory
+  - action: utter_ask_about_feature_importance
+  - or:
+    - intent: give_feature_importance
+    - intent: deny
+  - action: utter_ask_to_give_second_userstory
+  - intent: answer_userstory
+  - action: utter_ask_about_feature_importance
+  - or:
+    - intent: give_feature_importance
+    - intent: deny
+  - action: utter_end_the_interview
+  - intent: thank
+  - action: utter_bye
+  - intent: goodbye
+  - action: utter_bye
+  - action: action_restart
+
+
+#########################
+## short stories
+#########################
+- story: short 1
+  steps:
+  - intent: answer_name_role
+  - action: action_ask_years_of_experience
+  - intent: answer_give_years_of_experience
+  - action: utter_ask_to_give_first_userstory
+  - intent: answer_userstory
+  - action: utter_ask_about_feature_importance
+  - intent: give_feature_importance
+  - action: utter_ask_to_give_second_userstory
+  - intent: answer_userstory
+  - action: utter_ask_about_feature_importance
+  - intent: give_feature_importance
+  - action: utter_end_the_interview
+  - intent: thank
+  - action: utter_bye
+  - intent: goodbye
+  - action: utter_bye
+  - action: action_restart
+
+- story: short 2
+  steps:
+  - intent: answer_name_role
+  - action: action_ask_years_of_experience
+  - intent: answer_give_years_of_experience
+  - action: utter_ask_to_give_first_userstory
+  - intent: answer_userstory
+  - action: utter_ask_about_feature_importance
+
+
+- story: short 3
+  steps:
+  - intent: answer_userstory
+  - action: utter_ask_about_feature_importance
+  - intent: give_feature_importance
+  - action: utter_ask_to_give_second_userstory
+  - intent: answer_userstory
+  - action: utter_ask_about_feature_importance
+  - intent: give_feature_importance
+  - action: utter_end_the_interview
+  - intent: thank
+  - action: utter_bye
+  - intent: goodbye
+  - action: utter_bye
+  - action: action_restart
+
+- story: short 4
+  steps:
+  - intent: thank
+  - action: utter_bye
+  - intent: goodbye
+  - action: utter_bye
+  - action: action_restart
+
+- story: short 5
+  steps:
+  - intent: greet
+  - action: utter_welcome
+  - intent: react_negative
+  - action: utter_point_out_capability_unhappy
+  - intent: react_positive
+  - action: utter_interview_details
+  - intent: affirm
+  - action: utter_ask_to_name_role
+  - intent: answer_name_role
+  - action: action_ask_years_of_experience
+
+- story: short 6
+  steps:
+  - intent: answer_userstory
+  - action: utter_ask_about_feature_importance
+  - intent: give_feature_importance
+  - action: utter_ask_to_give_second_userstory
+  - intent: answer_userstory
+  - action: utter_ask_about_feature_importance
+  - intent: give_feature_importance
+  - action: utter_end_the_interview
+
+
+- story: short 7
+  steps:
+  - intent: greet
+  - action: utter_welcome
+  - intent: thank
+  - action: utter_point_out_capability
+  - intent: react_positive
+  - action: utter_interview_details
+  - intent: affirm
+  - action: utter_ask_to_name_role
+  - intent: answer_name_role
+  - action: action_ask_years_of_experience
+
+
+- story: short 7
+  steps:
+  - intent: answer_give_years_of_experience
+  - action: utter_ask_to_give_first_userstory
+  - intent: answer_userstory
+  - action: utter_ask_about_feature_importance
+  - intent: give_feature_importance
+  - action: utter_ask_to_give_second_userstory
+  - intent: answer_userstory
+  - action: utter_ask_about_feature_importance
+  - intent: give_feature_importance
+  - action: utter_end_the_interview
+
+
+######################
+# Sad paths:
+######################
+
+- story: User wants to end the interview and he is unhappy
+  steps:
+  - intent: greet
+  - action: utter_welcome
+  - intent: react_negative
+  - action: utter_point_out_capability_unhappy
+  - intent: deny
+  - action: utter_end_the_interview_abruptly
+  - action: action_restart
+
+- story: User wants to end the interview aftter learning the capabilities of Lucy- user reacted positively
+  steps:
+  - intent: greet
+  - action: utter_welcome
+  - intent: react_positive
+  - action: utter_point_out_capability
+  - intent: deny
+  - action: utter_end_the_interview_abruptly
+  - action: action_restart
+
+- story: User wants to end the interview aftter learning the capabilities of Lucy - user thanked
+  steps:
+  - intent: greet
+  - action: utter_welcome
+  - intent: thank
+  - action: utter_point_out_capability
+  - intent: deny
+  - action: utter_end_the_interview_abruptly
+  - action: action_restart
+
+- story: User wants to end the interview aftter learning the capabilities of Lucy- user affirmed
+  steps:
+  - intent: greet
+  - action: utter_welcome
+  - intent: affirm
+  - action: utter_point_out_capability
+  - intent: deny
+  - action: utter_end_the_interview_abruptly
+  - action: action_restart
+
+
+- story: User is unhappy and does not want to start
+  steps:
+  - intent: greet
+  - action: utter_welcome
+  - intent: react_negative
+  - action: utter_point_out_capability_unhappy
+  - intent: affirm
+  - action: utter_interview_details
+  - intent: deny
+  - action: utter_end_the_interview_abruptly
+  - action: action_restart
+
+- story: User does not want to start
+  steps:
+  - intent: greet
+  - action: utter_welcome
+  - intent: react_positive
+  - action: utter_point_out_capability_unhappy
+  - intent: affirm
+  - action: utter_interview_details
+  - intent: deny
+  - action: utter_end_the_interview_abruptly
+  - action: action_restart
+
+- story: User cant answer non of the questions- user is happy - 1
+  steps:
+  - intent: greet
+  - action: utter_welcome
+  - intent: react_positive
+  - action: utter_point_out_capability
+  - intent: affirm
+  - action: utter_interview_details
+  - intent: affirm
+  - action: utter_ask_to_name_role
+  - intent: deny
+  - action: utter_ask_to_give_first_userstory
+  - intent: deny
+  - action: utter_end_the_interview_abruptly
+  - action: action_restart
+
+- story: User cant answer non of the questions - 2
+  steps:
+  - intent: greet
+  - action: utter_welcome
+  - intent: thank
+  - action: utter_point_out_capability
+  - intent: affirm
+  - action: utter_interview_details
+  - intent: affirm
+  - action: utter_ask_to_name_role
+  - intent: deny
+  - action: utter_ask_to_give_first_userstory
+  - intent: deny
+  - action: utter_end_the_interview_abruptly
+  - action: action_restart
+
+- story: User cant answer non of the questions - 3
+  steps:
+  - intent: greet
+  - action: utter_welcome
+  - intent: affirm
+  - action: utter_point_out_capability
+  - intent: affirm
+  - action: utter_interview_details
+  - intent: affirm
+  - action: utter_ask_to_name_role
+  - intent: deny
+  - action: utter_ask_to_give_first_userstory
+  - intent: deny
+  - action: utter_end_the_interview_abruptly
+  - action: action_restart
+
+
+- story: User cant answer non of the questions - 4
+  steps:
+  - intent: greet
+  - action: utter_welcome
+  - intent: react_positive
+  - action: utter_point_out_capability
+  - intent: affirm
+  - action: utter_interview_details
+  - intent: react_positive
+  - action: utter_ask_to_name_role
+  - intent: deny
+  - action: utter_ask_to_give_first_userstory
+  - intent: deny
+  - action: utter_end_the_interview_abruptly
+  - action: action_restart
+
+- story:  User cant answer non of the questions but user is not happy
+  steps:
+  - intent: greet
+  - action: utter_welcome
+  - intent: react_negative
+  - action: utter_point_out_capability_unhappy
+  - intent: react_positive
+  - action: utter_interview_details
+  - intent: react_positive
+  - action: utter_ask_to_name_role
+  - intent: deny
+  - action: utter_ask_to_give_first_userstory
+  - intent: deny
+  - action: utter_end_the_interview_abruptly
+  - action: action_restart
+
+
+- story: User can answer role but not years of experience
+  steps:
+  - intent: greet
+  - action: utter_welcome
+  - intent: react_positive
+  - action: utter_point_out_capability
+  - intent: affirm
+  - action: utter_interview_details
+  - intent: react_positive
+  - action: utter_ask_to_name_role
+  - intent: answer_name_role
+  - action: action_ask_years_of_experience
+  - intent: deny
+  - action: utter_ask_to_give_first_userstory
+  - intent: deny
+  - action: utter_end_the_interview_abruptly
+  - action: action_restart
+
+
+- story:  User cant answer role but not years of experience and user is unhappy
+  steps:
+  - intent: greet
+  - action: utter_welcome
+  - intent: react_negative
+  - action: utter_point_out_capability_unhappy
+  - intent: react_positive
+  - action: utter_interview_details
+  - intent: react_positive
+  - action: utter_ask_to_name_role
+  - intent: answer_name_role
+  - action: action_ask_years_of_experience
+  - intent: deny
+  - action: utter_ask_to_give_first_userstory
+  - intent: deny
+  - action: utter_end_the_interview_abruptly
+  - action: action_restart
+
+
+- story: User cant answer user story
+  steps:
+  - intent: greet
+  - action: utter_welcome
+  - intent: react_positive
+  - action: utter_point_out_capability
+  - intent: affirm
+  - action: utter_interview_details
+  - intent: react_positive
+  - action: utter_ask_to_name_role
+  - intent: answer_name_role
+  - action: action_ask_years_of_experience
+  - intent: answer_give_years_of_experience
+  - action: utter_ask_to_give_first_userstory
+  - intent: deny
+  - action: utter_end_the_interview_abruptly
+  - action: action_restart
+
+
+- story: User cant answer user story and is not happy
+  steps:
+  - intent: greet
+  - action: utter_welcome
+  - intent: react_negative
+  - action: utter_point_out_capability_unhappy
+  - intent: react_positive
+  - action: utter_interview_details
+  - intent: react_positive
+  - action: utter_ask_to_name_role
+  - intent: answer_name_role
+  - action: action_ask_years_of_experience
+  - intent: answer_give_years_of_experience
+  - action: utter_ask_to_give_first_userstory
+  - intent: deny
+  - action: utter_end_the_interview_abruptly
+  - action: action_restart

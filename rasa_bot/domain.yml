@@ -1,0 +1,94 @@
+version: '3.1'
+intents:
+  - answer_name_role:
+      use_entities:
+        - role
+  - answer_give_years_of_experience:
+      use_entities:
+        - DATE
+  - answer_userstory:
+      use_entities:
+        - user
+        - functionality
+        - benefit
+  - give_feature_importance:
+      use_entities: []
+  - greet:
+      use_entities: []
+  - thank:
+      use_entities: []
+  - goodbye:
+      use_entities: []
+  - affirm:
+      use_entities: []
+  - deny:
+      use_entities: []
+  - react_positive:
+      use_entities: []
+  - react_negative:
+      use_entities: []
+  - explain:
+      use_entities: []
+  - repeat:
+      use_entities: []
+  - restart:
+      use_entities: []
+  - need_help:
+      use_entities: []
+  - explain_user_stories:
+      use_entities: []
+  - bot_challenge:
+      use_entities: []
+  - human_handoff:
+      use_entities: []
+  - end_conversation:
+      use_entities: []
+
+
+entities:
+  - role
+  - DATE
+  - user
+  - functionality
+  - benefit
+slots:
+  user_job_title:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: custom
+  user_years_of_experience:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: custom
+  features_importance:
+    type: any
+    influence_conversation: false
+    mappings:
+      - type: custom
+  user_stories:
+    influence_conversation: false
+    type: any
+    mappings:
+      - type: custom
+#  project_deadline:
+#    type: text
+#    influence_conversation: false
+#    mappings:
+#      - type: custom
+#  project_budget:
+#    type: text
+#    influence_conversation: false
+#    mappings:
+#      - type: custom
+actions:
+  - action_validate_slot_mappings
+  - action_ask_years_of_experience
+  - action_repeat_last_utterance
+  - action_restart
+  #- action_extract_is_first_interview
+
+session_config:
+  session_expiration_time: 30
+  carry_over_slots_to_new_session: false

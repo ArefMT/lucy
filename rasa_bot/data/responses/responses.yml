@@ -1,0 +1,76 @@
+version: "3.1"
+
+responses:
+  utter_welcome:
+    - text: utter_welcome
+  #  - text: Hello and welcome to our interview! My name is Lucy, and I am a voice bot trained as a requirement engineer. Today I will be your interviewer. How are you doing?
+
+  utter_point_out_capability:
+    - text: utter_point_out_capability
+  #  - text: Great! Before we start, I would like to point out a couple of important things. Because of my training as a requirement engineer, it might be difficult for me to help you with other tasks that are non-related to this topic. Should I continue?
+
+  utter_point_out_capability_unhappy:
+    - text: utter_point_out_capability_unhappy
+  #  - text: I hope this interview can cheer you up! Before we start, I would like to point out a couple of important things. Because of my training as a requirement engineer, it might be difficult for me to help you with other tasks that are non-related to this topic. Should I continue?
+
+
+  utter_interview_details:
+    - text: utter_interview_details
+  #  - text: During this interview I am going to ask you questions about your involvement in the project and about the new features. Please feel free to answer as you see fit.The Interview is set to take less than 5 minutes, but of course we can end it at any point. Are you ready to start?
+
+
+  utter_ask_to_name_role:
+    - text: utter_ask_to_name_role
+  #  - text: Alright! Could you please name your job title or your role in the project?
+
+
+  utter_ask_to_give_first_userstory:
+    - text: utter_ask_to_give_first_userstory
+  #  - text: Ok! Can you give me a new feature and formulate it as a user story?
+
+  utter_ask_to_give_second_userstory:
+    - text: utter_ask_to_give_second_userstory
+  #  - text: And can you think of a second feature?
+
+  utter_ask_about_feature_importance:
+    - text: utter_ask_about_feature_importance_1
+    - text: utter_ask_about_feature_importance_2
+
+  #  - text_1: How important is this feature?
+  #  - text_2: How important is this functionality?
+
+  utter_end_the_interview:
+    - text: utter_end_the_interview
+  #  - text: Alright! That was my last question. Thank you for your time. I will prepare a summary of this interview for you and send it to your email. Thank you again and have a nice day!
+
+  utter_end_the_interview_abruptly:
+    - text: utter_end_the_interview_abruptly
+  #  - text: I see, it was veery nice talking to you. Please be free to speak to me again if you want to have another talk. Goodbye!
+
+  utter_explain_user_stories:
+    - text: utter_explain_user_stories
+  #  - text: A user story is a way to describe the functionalities of the application from the perspective of its users. An example of a user story is the following as a website member, I want to mark my email address as private, so that no one can contact me. Every user story consists of three parts as a, I want to, so that. We start with ,as a, followed by the role of the user in our story. In the previous example we said, as a website member. Then we state which functionality is wanted by this exemplary user. In our example we said, I want to, mark my address as private. In the last part we state which benefit we get from the functionality using, so that. In our example we said, so that no one can contact me. Another user story is As a potential customer, I want to read book reviews, so that I can decide which one to buy.
+
+#  utter_ask_whether_first_interview:
+#    - text: utter_ask_whether_first_interview
+  #  - text:  Okay, I will start with some questions to get to know you, and your involvement with the project a bit better. Is it your first time doing an interview with a requirement engineer?
+
+#  utter_ask_wether_user_used_software:
+#    - text: utter_ask_wether_user_used_software
+  #  - text: Okay, I see. I think we can now move on to discuss the software.  I would like to know if you have used any similar apps before.
+
+#  utter_ask_about_time:
+#    - text: utter_ask_about_time
+  #  - text: Can you please tell me how much time do we have to work on this project?
+
+#  utter_ask_about_budget:
+#    - text: utter_ask_about_budget
+  #  - text: And do you happen to know how much has been budgeted for the project?
+
+#  utter_joke_about_budget:
+#    - text: utter_joke_about_budget
+  #  - text: Good that we have this question out of the way. Should we continue?
+
+
+
+

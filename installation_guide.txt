@@ -1,0 +1,71 @@
+The following is an installation guide for the voicebot Lucy. 
+
+The following components are included in this guide: 
+
+	1- the stt_service 
+
+	2- the tts_service 
+
+	3- the rasa_bot 
+
+	4- the flutter_app 
+
+	5- the db_server 
+
+Please make sure to install the required dependencies for every component before running the code. 
+
+The following dependencies are needed, if the code doesn’t compile, please check for missing dependencies and check the version of Python/ Dart / Flutter that you have. 
+
+For 1 please check: https://alphacephei.com/vosk/ 
+
+For 2 please check: https://github.com/coqui-ai/TTS 
+
+For 3 please check: https://rasa.com/docs/rasa/docker/building-in-docker/ 
+
+For 4 please check: https://docs.flutter.dev/get-started/install 
+
+-------------------------------------------------------------------------------------------------------------- 
+
+The service should be initiated in this order: 
+
+Tts_service -> db_server / MongoDB -> rasa_action_server -> rasa_core -> stt_service -> the flutter app. 
+
+--------------------------------------------------------------------------------------------------------------- 
+
+the stt_service: 
+
+To run the stt_service after installing all the needed dependencies, please download the desired data set and place it in the same folder as the script. 
+
+----------------------------------------------------------------------------------------------------------------- 
+
+For running the Flutter app and using the wake word, you must have an access key from  
+
+https://pub.dev/packages/porcupine_flutter/versions/2.0.1 
+
+---------------------------------------------------------------------------------------------------------------- 
+
+For Rasa you can use the provided link to run it in container and use the trained model in the model folder. 
+
+---------------------------------------------------------------------------------------------------------------- 
+
+MIT License 
+ 
+Copyright (c) [2022] [Aref El-Maarawi Tefur] 
+ 
+Permission is hereby granted, free of charge, to any person obtaining a copy 
+of this software and associated documentation files (the "Software"), to deal 
+in the Software without restriction, including without limitation the rights 
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell 
+copies of the Software, and to permit persons to whom the Software is 
+furnished to do so, subject to the following conditions: 
+ 
+The above copyright notice and this permission notice shall be included in all 
+copies or substantial portions of the Software. 
+ 
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE 
+SOFTWARE. 
