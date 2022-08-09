@@ -63,7 +63,7 @@ Vosk offers an API and pre-trained models for the more famous KALDI speech recog
 
 The bytes stream is also saved to an in-memory buffer and then when a specific threshold is reached, the received bytes are fed to a machine learning-based voice activity detector, which monitors the voice stream for the existence of human speech, and when no human speech is being detected anymore, it immediately triggers a timer which, after a couple of seconds:  
 
-1- podcast an event to the client app to shut down the voice stream.
+1- podcast an event to the client app to shut down the voice stream.\
 2- and at the same time it sends the last version of the transcribed user utterance to the Rasa Open-source service to be further processed.   
 
 The models for vosk and Silero are open source and freely available. 
@@ -99,10 +99,10 @@ The following components are included in this guide:
 	5- the db_server 
 Please make sure to install the required dependencies for every component before running the code. 
 The following dependencies are needed, if the code doesn’t compile, please check for missing dependencies and check the version of Python/ Dart / Flutter that you have. 
-For 1 please check: https://alphacephei.com/vosk/ 
-For 2 please check: https://github.com/coqui-ai/TTS 
-For 3 please check: https://rasa.com/docs/rasa/docker/building-in-docker/ 
-For 4 please check: https://docs.flutter.dev/get-started/install 
+For 1 please check: https://alphacephei.com/vosk/ \
+For 2 please check: https://github.com/coqui-ai/TTS \
+For 3 please check: https://rasa.com/docs/rasa/docker/building-in-docker/  \
+For 4 please check: https://docs.flutter.dev/get-started/install \
 -------------------------------------------------------------------------------------------------------------- 
 The service should be initiated in this order: 
 Tts_service -> db_server / MongoDB -> rasa_action_server -> rasa_core -> stt_service -> the flutter app. 
