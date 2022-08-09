@@ -37,7 +37,7 @@ Because the backend exposes two WebSocket API endpoints, any client can utilize 
 backend, not only the client app discussed here.
 An architecture diagram of the system is depicted below:
 
-![System Architecture]("Copy of arch".png)
+![System Architecture](arch.png)
 
 
 
