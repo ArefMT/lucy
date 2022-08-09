@@ -90,7 +90,32 @@ The client app "play" the voicebot voice, and the cycle continue until the end o
 
 ## Installation
 
+The following components are included in this guide: 
+
+	1- the stt_service 
+	2- the tts_service 
+	3- the rasa_bot 
+	4- the flutter_app 
+	5- the db_server 
+Please make sure to install the required dependencies for every component before running the code. 
+The following dependencies are needed, if the code doesn’t compile, please check for missing dependencies and check the version of Python/ Dart / Flutter that you have. 
+For 1 please check: https://alphacephei.com/vosk/ 
+For 2 please check: https://github.com/coqui-ai/TTS 
+For 3 please check: https://rasa.com/docs/rasa/docker/building-in-docker/ 
+For 4 please check: https://docs.flutter.dev/get-started/install 
+-------------------------------------------------------------------------------------------------------------- 
+The service should be initiated in this order: 
+Tts_service -> db_server / MongoDB -> rasa_action_server -> rasa_core -> stt_service -> the flutter app. 
+--------------------------------------------------------------------------------------------------------------- 
+the stt_service: 
+To run the stt_service after installing all the needed dependencies, please download the desired data set and place it in the same folder as the script. 
+----------------------------------------------------------------------------------------------------------------- 
+For running the Flutter app and using the wake word, you must have an access key from  
+https://pub.dev/packages/porcupine_flutter/versions/2.0.1 
+---------------------------------------------------------------------------------------------------------------- 
+For Rasa you can use the provided link to run it in container and use the trained model in the model folder.
 [The Rasa trained model files can be downloaded from here](https://drive.google.com/file/d/1JgUUmdJ58FRxCUvQgiGzBajCbYCN5syj/view?usp=sharing)
+---------------------------------------------------------------------------------------------------------------- 
 
 ## License
 
