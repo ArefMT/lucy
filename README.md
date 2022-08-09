@@ -42,6 +42,8 @@ An architecture diagram of the system is depicted below:
 
 
 ## Functionality
+
+#### Client App and STT service
 Lucy is designed to carry out a short interview and to start by introducing herself and her capabilities, and then she continues asking about the stakeholder and their role and experience with the software. She then explains what user stories and ask the interviewee if they have any user story or a feature to share and how important this feature is. 
 
 User stories are a way to describe features, and they have a simple structure. Because the voicebot is domain independent and it is rather challenging to capture all types of natural language descriptions of a requirement. It was more feasible to train the language model with tagged user stories data. It is enough for the user to state the feature as a wish (I want, I would love to have, I need) and it is not necessary to give the whole user story. 
@@ -64,8 +66,9 @@ The bytes stream is also saved to an in-memory buffer and then when a specific t
 1- podcast an event to the client app to shut down the voice stream.
 2- and at the same time it sends the last version of the transcribed user utterance to the Rasa Open-source service to be further processed.   
 
-The models for vosk and Silero, which is open source and freely available. 
+The models for vosk and Silero are open source and freely available. 
 
+#### Rasa
 Rasa Open source is a framework for developing contextual chatbots. It consists of two parts. One is the NLU pipeline and the other is the Dialog manager. We can think about the Rasa component as the brain of the voicebot.  
 
 The NLU pipeline is a combination of processing steps that convert user messages into intents and entities. The intent and entity recognizers used in the pipeline are the DIETclassifier (based on transformer architecture) provided by Rasa for intent classification and entity extraction, and  SpacyEntityExtractor spyce library.  
@@ -78,11 +81,12 @@ After the NLU components predicted the intent of a user message, the dialog mana
 The entity extraction is done automatically by RASA, and it is then validated in a special component called the Rasa Action Server, where some heuristics are applied to validate if the correct entity has been correctly extracted. Upon validating the extracted entities, they are sent to a DB server to be saved to a MongoDB database, under the ID of the user.  
 The Rasa Open-Source service then send the right response to the TTS service, to be turned into voice and sent back to the client app. The conversation log is saved after every interaction to a MongoDB database. 
 
+#### TTS Service
 The TTS server is a python webserver built with Sanic, which is a HTTP server that offers HTTP responses via asynchronous request handling (fast), and it also has WebSocket support. The TTS processing is done using Coqui which is a spin-off project that continue the work of Mozilla open TTS project, which is not maintained anymore. Coqui offers pre-trained models. 
 
 Because some of the voicebot responses are the same for all the interviews (like asking how you are), these responses have been generated beforehand and are saved as static files to the TTS server with a special naming convention. To save resources and not to generate them every time. Upon receiving the voicebot response, the TTS service checks whether the response should be generated in real time, and then send it via WebSocket to the client app. 
 
-The client app "plays" the voicebot voice, and the cycle continue until the end of conversation is reached. The voicebot will then say goodbye and a new conversation can be started again. 
+The client app "play" the voicebot voice, and the cycle continue until the end of conversation is reached. The voicebot will then say goodbye and a new conversation can be started again. 
 
 ## Installation
 
