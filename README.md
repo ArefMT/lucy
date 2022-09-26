@@ -26,7 +26,7 @@ Lucy uses a number of open source projects:
 - [Vosk] - Awesome text to speech (STT) library  
 - [Coqui] - A toolkit for speech synthesising
 - [Flutter] - To build amazing apps
-- [Silero] - Very usful Voice Activity Detector VAD
+- [Silero] - Very useful Voice Activity Detector VAD
 - [Porcupine] - The wake word enigne of choice!
 
 ## Architecure
@@ -76,7 +76,7 @@ The NLU pipeline is a combination of processing steps that convert user messages
 The DIETclassifer is trained on thousands of sentences representing multiple user intents and containing examples for the entities that should be extracted from the user answers. The data was partly open-source data which, was cleaned and tagged by me (the scripts are in the data) and other data which is generated through simulated interaction with the voicebot.  
 The SpacyEntityExtractor is pretrained and is solely being used to extract one entity "DATE". 
 
-After the NLU components predicted the intent of a user message, the dialog management component takes this prediction and the state of the conversation and predicts the next action. To train the dialog manager a so-called story approach is followed, where various interaction scenarios or stories are given as steps in YAML format -example- to train them. A rule-based approach is also followed with some simple rules like (if user greets, greet back, etc.) 
+After the NLU components predicted the intent of a user message, the dialog management component takes this prediction and the state of the conversation and predicts the next action. To train the dialog manager a so-called story approach is followed, where various interaction scenarios or stories are given as steps in YAML format to train them. A rule-based approach is also followed with some simple rules like (if user greets, greet back, etc.) 
 
 The entity extraction is done automatically by RASA, and it is then validated in a special component called the Rasa Action Server, where some heuristics are applied to validate if the correct entity has been correctly extracted. Upon validating the extracted entities, they are sent to a DB server to be saved to a MongoDB database, under the ID of the user.  
 The Rasa Open-Source service then send the right response to the TTS service, to be turned into voice and sent back to the client app. The conversation log is saved after every interaction to a MongoDB database. 
